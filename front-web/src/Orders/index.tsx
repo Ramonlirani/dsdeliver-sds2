@@ -24,7 +24,7 @@ function Orders() {
             .then(response => setProducts(response.data))
             .catch(() => {
                 toast.warning('Erro ao listas produtos');
-            }
+            })
     }, []);
 
     const handleSelectProduct = (product: Product) => {
